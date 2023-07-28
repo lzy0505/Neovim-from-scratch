@@ -44,7 +44,6 @@ let &t_fd = "\e[?1004l"
 " Window title
 let &t_ST = "\e[22;2t"
 let &t_RT = "\e[23;2t"
-
 let &t_ut=''
 ]])
 
@@ -80,10 +79,7 @@ vim.g.doom_one_plugin_indent_blankline = true
 vim.g.doom_one_plugin_vim_illuminate = true
 vim.g.doom_one_plugin_lspsaga = false
 
-
-
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
   return
 end
-
